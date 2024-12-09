@@ -162,7 +162,6 @@ nav {
 
 .header__content {
   text-align: center;
-  padding: 2rem;
 }
 
 .header__content h1 {
@@ -171,14 +170,12 @@ nav {
   text-align: center;
 }
 
-.header__content span {
+.header__content span{
   color: yellow;
-  font-size: 36px;
 }
 
 .header__content .section__description {
   margin-bottom: 2rem;
-  padding: 4rem;
 }
 
 .header__image {
@@ -196,12 +193,18 @@ nav {
   border-radius: 25rem;
   mix-blend-mode: lighten;
 }
-.header__image::before,
+
 .header__image::after {
   position: absolute;
-  content: "";
-  background: conic-gradient(transparent,transparent,transparent,var(--main--color));
-  transform: rotate(0deg) ;
+  content: "ARUN KUMAR";
+  letter-spacing: 1.5rem;
+  opacity: 0.5;
+  right: 1rem;
+  top: 50%;
+  transform: translate(50%, -50%) rotate(90deg);
+  
+
+
 
 }
 
