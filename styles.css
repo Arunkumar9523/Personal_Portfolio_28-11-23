@@ -162,6 +162,7 @@ nav {
 
 .header__content {
   text-align: center;
+  padding: 2rem;
 }
 
 .header__content h1 {
@@ -170,8 +171,14 @@ nav {
   text-align: center;
 }
 
+.header__content span {
+  color: yellow;
+  font-size: 36px;
+}
+
 .header__content .section__description {
   margin-bottom: 2rem;
+  padding: 4rem;
 }
 
 .header__image {
@@ -181,19 +188,21 @@ nav {
 }
 
 .header__image img {
+  position: relative;
+  display: block;
+  object-fit: cover;
   max-width: 450px;
   margin-inline: auto;
   border-radius: 25rem;
+  mix-blend-mode: lighten;
 }
-
+.header__image::before,
 .header__image::after {
   position: absolute;
-  content: "ARUNKUMAR";
-  letter-spacing: 1.5rem;
-  opacity: 0.5;
-  right: 1rem;
-  top: 50%;
-  transform: translate(50%, -50%) rotate(90deg);
+  content: "";
+  background: conic-gradient(transparent,transparent,transparent,var(--main--color));
+  transform: rotate(0deg) ;
+
 }
 
 .about__container {

@@ -12,6 +12,13 @@ menuBtn.addEventListener("click", (e) => {
   );
 });
 
+var typed = new Typed(".loop",{
+  strings:["Full stack developer","Web Developer","Software Engineer"],
+  typeSpeed:150,
+  backSpeed:150,
+  looped:true
+})
+
 navLinks.addEventListener("click", (e) => {
   navLinks.classList.remove("open");
   menuBtnIcon.setAttribute("class", "ri-menu-3-line");
