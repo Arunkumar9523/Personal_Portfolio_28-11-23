@@ -2,7 +2,6 @@ const navLinks = document.getElementById("nav-links");
 const menuBtn = document.getElementById("menu-btn");
 const menuBtnIcon = menuBtn.querySelector("i");
 
-// Toggle the menu when the hamburger icon is clicked
 menuBtn.addEventListener("click", (e) => {
   navLinks.classList.toggle("open");
 
@@ -13,29 +12,25 @@ menuBtn.addEventListener("click", (e) => {
   );
 });
 
-// Close the menu when any link is clicked on mobile
+var typed = new Typed(".loop",{
+  strings:["Full stack developer","Web Developer","Software Engineer"],
+  typeSpeed:150,
+  backSpeed:150,
+  looped:true
+})
+
 navLinks.addEventListener("click", (e) => {
   navLinks.classList.remove("open");
   menuBtnIcon.setAttribute("class", "ri-menu-3-line");
 });
 
-// Initialize the Typed.js effect for text animation
-var typed = new Typed(".loop", {
-  strings: ["Full stack developer", "Web Developer", "Software Engineer"],
-  typeSpeed: 150,
-  backSpeed: 150,
-  loop: true,
-});
-
-// ScrollReveal options for smooth animations
 const scrollRevealOption = {
   distance: "50px",
   origin: "bottom",
   duration: 1000,
-  reset: true,  // Ensures animation resets when scrolling up
 };
 
-// header container reveal animation
+// header container
 ScrollReveal().reveal(".header__content h1", {
   ...scrollRevealOption,
 });
@@ -50,7 +45,7 @@ ScrollReveal().reveal(".header__content .header__btn", {
   delay: 1000,
 });
 
-// about container reveal animation
+// about container
 ScrollReveal().reveal(".about__content .section__header", {
   ...scrollRevealOption,
 });
@@ -65,13 +60,13 @@ ScrollReveal().reveal(".about__content .about__btn", {
   delay: 1000,
 });
 
-// service container reveal animation
+// service container
 ScrollReveal().reveal(".service__card", {
   ...scrollRevealOption,
   interval: 500,
 });
 
-// portfolio container reveal animation
+// portfolio container
 ScrollReveal().reveal(".portfolio__card", {
   duration: 1000,
   interval: 500,
