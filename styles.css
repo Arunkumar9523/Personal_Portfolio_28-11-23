@@ -163,11 +163,12 @@ nav {
 
 .header__content {
   text-align: center;
+  
 }
 
 .header__content h1 {
   margin-bottom: 1rem;
-  font-size: 3rem;
+  font-size: 1rem;
   text-align: center;
 }
 
@@ -187,7 +188,8 @@ nav {
 
 .header__image img {
   position: relative;
-  display: block;
+  left:60px;
+  display: inline-flex;
   object-fit: cover;
   max-width: 450px;
   margin-inline: auto;
@@ -481,3 +483,4 @@ nav {
     grid-template-columns: repeat(3, 1fr);
   }
 }
+
