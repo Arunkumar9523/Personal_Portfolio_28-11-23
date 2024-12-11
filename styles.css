@@ -188,7 +188,6 @@ nav {
 
 .header__image img {
   position: relative;
-  left:60px;
   display: inline-flex;
   object-fit: cover;
   max-width: 450px;
