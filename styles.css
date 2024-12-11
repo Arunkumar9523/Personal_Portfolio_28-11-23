@@ -31,12 +31,13 @@
   font-size: 2rem;
   font-weight: 700;
   text-align: center;
+  display: inline-block;
 }
-
+c
 .section__description {
   max-width: 600px;
   margin-inline: auto;
-  color: var(--extra-light);
+  color:rgb(184, 163, 123);
   text-align: center;
   line-height: 1.75rem;
 }
@@ -247,6 +248,10 @@ nav {
 
 .about__content .section__description {
   margin-bottom: 2rem;
+}
+
+.about__content h5 {
+  display: inline-block;
 }
 
 .service__grid {
