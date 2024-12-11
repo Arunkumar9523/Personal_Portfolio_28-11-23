@@ -102,13 +102,9 @@ nav {
   align-items: center;
   justify-content: space-between;
   gap: 2rem;
-  /* background-image: var(--gradient-1); */
+  background-image: var(--gradient-1);
 }
 
-.nav__logo {
-  padding: 9px 12px;
-  font-size: 1.2rem;
-}
 
 .nav__bar a {
   font-size: 1.2rem;
@@ -150,9 +146,6 @@ nav {
   color: var(--white);
 }
 
-.btn__large {
-  display: none;
-}
 
 .header__container {
   padding-top: 8rem;
@@ -182,6 +175,7 @@ nav {
 
 .header__image {
   position: relative;
+  left:15px;
   isolation: isolate;
   z-index: -1;
 }

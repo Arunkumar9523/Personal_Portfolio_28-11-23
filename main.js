@@ -13,7 +13,7 @@ menuBtn.addEventListener("click", (e) => {
 });
 
 var typed = new Typed(".loop",{
-  strings:["Full stack developer","Web Developer","Software Engineer"],
+  strings:["Full stack developer","MERN Deloper","Software Engineer"],
   typeSpeed:150,
   backSpeed:150,
   looped:true
